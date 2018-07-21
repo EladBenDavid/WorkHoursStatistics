@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.bringg.elad"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "versionCode"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                // this we help us the get all the DB schema history
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    repositories {
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes.each {
+        it.buildConfigField('String', 'GoogleMapsApiKey', GoogleMapsApiKey)
+    }
+
+    // We like to set differentiate params for Demo/QA and prod
+    // For example: Geofence loitering delay should be bigger in the real user from demo
+    productFlavors {
+        prod {}
+        demo {}
+    }
+
+    // we avoid the issue of accidentally release version with demo variables
+    variantFilter { variant ->
+        def names = variant.flavors*.name
+        if (variant.buildType.name == 'release' && names.contains("demo")) {
+            // Gradle ignores any variants that satisfy the conditions above.
+            setIgnore(true)
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //location
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    // Room
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    // ViewModel and LiveData
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+     // recyclerview
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    // rx
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    //dagger
+    implementation 'com.google.dagger:dagger:2.10'
+    annotationProcessor "com.google.dagger:dagger-compiler:2.10"
+    // for working hours duration format
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    // for auto-compete the address
+    implementation 'com.seatgeek:placesautocomplete:0.3-SNAPSHOT'
+
+
+
+    // TESTS
+    //-------
+    // junit
+    testImplementation 'junit:junit:4.12'
+    // robolectric
+    testImplementation "org.robolectric:robolectric:3.8"
+
+
+    //INSTRUMENTATION
+    //---------------
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer http://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<wpt lat="32.8598816" lon="35.0848331">
+  <name>אגוזים 6, קרית ים‭</name>
+</wpt>
+<wpt lat="32.860471" lon="35.086484">
+  <name>32.860471,35.086484</name>
+  <desc>Tse'elon St 8, Kiryat Yam, Israel</desc>
+</wpt>
+<trk>
+  <name>אגוזים 6, קרית ים‭ - Tse'elon St 8</name>
+  <desc>0.5 km, 0:02</desc>
+  <trkseg>
+    <trkpt lat="32.85988" lon="35.08483"></trkpt>
+    <trkpt lat="32.85988" lon="35.08482"></trkpt>
+    <trkpt lat="32.85992" lon="35.0846"></trkpt>
+    <trkpt lat="32.85992" lon="35.08435"></trkpt>
+    <trkpt lat="32.85992" lon="35.08421"></trkpt>
+    <trkpt lat="32.85993" lon="35.08416"></trkpt>
+    <trkpt lat="32.85996" lon="35.0841"></trkpt>
+    <trkpt lat="32.86013" lon="35.0839"></trkpt>
+    <trkpt lat="32.86022" lon="35.08378"></trkpt>
+    <trkpt lat="32.86031" lon="35.08361"></trkpt>
+    <trkpt lat="32.86035" lon="35.08352"></trkpt>
+    <trkpt lat="32.86035" lon="35.08352"></trkpt>
+    <trkpt lat="32.86036" lon="35.08352"></trkpt>
+    <trkpt lat="32.86037" lon="35.08352"></trkpt>
+    <trkpt lat="32.86038" lon="35.08352"></trkpt>
+    <trkpt lat="32.86039" lon="35.08352"></trkpt>
+    <trkpt lat="32.8604" lon="35.08352"></trkpt>
+    <trkpt lat="32.86041" lon="35.08351"></trkpt>
+    <trkpt lat="32.86042" lon="35.0835"></trkpt>
+    <trkpt lat="32.86043" lon="35.0835"></trkpt>
+    <trkpt lat="32.86044" lon="35.08349"></trkpt>
+    <trkpt lat="32.86045" lon="35.08348"></trkpt>
+    <trkpt lat="32.86046" lon="35.08347"></trkpt>
+    <trkpt lat="32.86057" lon="35.08358"></trkpt>
+    <trkpt lat="32.86064" lon="35.08363"></trkpt>
+    <trkpt lat="32.86076" lon="35.08372"></trkpt>
+    <trkpt lat="32.8608" lon="35.08376"></trkpt>
+    <trkpt lat="32.86082" lon="35.08379"></trkpt>
+    <trkpt lat="32.86084" lon="35.08381"></trkpt>
+    <trkpt lat="32.86085" lon="35.08383"></trkpt>
+    <trkpt lat="32.86086" lon="35.08386"></trkpt>
+    <trkpt lat="32.86087" lon="35.08391"></trkpt>
+    <trkpt lat="32.86088" lon="35.08396"></trkpt>
+    <trkpt lat="32.86089" lon="35.08401"></trkpt>
+    <trkpt lat="32.86089" lon="35.08417"></trkpt>
+    <trkpt lat="32.86088" lon="35.08455"></trkpt>
+    <trkpt lat="32.86082" lon="35.08518"></trkpt>
+    <trkpt lat="32.86071" lon="35.08574"></trkpt>
+    <trkpt lat="32.86057" lon="35.08626"></trkpt>
+    <trkpt lat="32.86047" lon="35.08648"></trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>Tse'elon St 8 - אגוזים 6, קרית ים‭</name>
+  <desc>0.2 km, 0:02</desc>
+  <trkseg>
+    <trkpt lat="32.86047" lon="35.08648"></trkpt>
+    <trkpt lat="32.86033" lon="35.08639"></trkpt>
+    <trkpt lat="32.86016" lon="35.08625"></trkpt>
+    <trkpt lat="32.85991" lon="35.08602"></trkpt>
+    <trkpt lat="32.85981" lon="35.08592"></trkpt>
+    <trkpt lat="32.85967" lon="35.08577"></trkpt>
+    <trkpt lat="32.85964" lon="35.08573"></trkpt>
+    <trkpt lat="32.85964" lon="35.08572"></trkpt>
+    <trkpt lat="32.85964" lon="35.08571"></trkpt>
+    <trkpt lat="32.85963" lon="35.08568"></trkpt>
+    <trkpt lat="32.85963" lon="35.08565"></trkpt>
+    <trkpt lat="32.85964" lon="35.0856"></trkpt>
+    <trkpt lat="32.85967" lon="35.0855"></trkpt>
+    <trkpt lat="32.85971" lon="35.08542"></trkpt>
+    <trkpt lat="32.85981" lon="35.08513"></trkpt>
+    <trkpt lat="32.85988" lon="35.08483"></trkpt>
+  </trkseg>
+</trk>
+</gpx>
