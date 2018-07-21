@@ -1,0 +1,6 @@
+<resources>
+    // For best results, the minimium radius of the geofence should be set between 100 - 150.
+    // We can NOT assume the user working in office and he have WI-Fi...
+    <integer name="geofence_radius">100</integer>
+    <integer name="geofence_loitering_delay">300000</integer>
+</resources>

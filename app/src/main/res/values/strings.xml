@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WorkHoursStatistics</string>
+    <string name="start_geofence_service">Starting geofence transition service</string>
+    <string name="google_play_services_unavailable">Google Play services unavailable.</string>
+    <string name="entering_geofence">Entering the GeoFence zone</string>
+    <string name="exiting_geofence">Exiting the GeoFence zone</string>
+    <string name="geofence_transition_invalid_type">unknown transition type:</string>
+    <string name="geofencing_event_error_code">geofencing event error code:</string>
+
+    <string name="location_permission">Please reopen the application and approve location permission</string>
+    <string name="please_enter_your_work_address">please enter your work adress</string>
+    <string name="working_address_config">working address config</string>
+    <string name="statics">statics</string>
+    <string name="cant_find_the_address">can\'t find the address</string>
+</resources>
