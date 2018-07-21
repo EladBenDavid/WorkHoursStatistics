@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         // ask location permission
         int accessFineLocationPermissionStatus = ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) ;
-        if(accessFineLocationPermissionStatus == PackageManager.PERMISSION_GRANTED){
+        if(accessFineLocationPermissionStatus != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(MainActivity.this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     1);
