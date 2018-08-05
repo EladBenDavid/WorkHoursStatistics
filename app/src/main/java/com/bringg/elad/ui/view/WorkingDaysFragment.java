@@ -31,7 +31,6 @@ public class WorkingDaysFragment extends Fragment {
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         viewModel = ViewModelProviders.of(getActivity()).get(WorkingDaysViewModel.class);
-        viewModel.initRepository(this.getActivity().getApplicationContext());
         observersRegisters();
         return view;
     }
